@@ -21,7 +21,7 @@ async def send_welcome(message: types.Message):
     web_app_url_with_params = f"{WEB_APP_URL}?user_id={user.id}&first_name={user.first_name}&last_name={user.last_name}&username={user.username}"
     web_app_button = InlineKeyboardButton(text="Запустить Crypto Checker📈", web_app=types.WebAppInfo(url=web_app_url_with_params))
     keyboard.add(web_app_button)
-    await message.answer("Привет! В Crypto Checker можно посмотреть курс валют💲 и стоимость своего портфеля💼.", reply_markup=keyboard.as_markup())
+    await message.answer("Привет! В Crypto Checker можно посмотреть курс валют 💲 и стоимость своего портфеля 💼.", reply_markup=keyboard.as_markup())
 
 async def main():
     # Пропускать накопленные обновления и запускать бота

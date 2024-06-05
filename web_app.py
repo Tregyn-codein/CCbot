@@ -2,7 +2,7 @@ import flet as ft
 from urllib.parse import parse_qs, urlparse
 
 def main(page: ft.Page):
-    page.title = "My Web App"
+    page.title = "Crypto Checker 👀"
 
     # Получение параметров URL
     url_params = parse_qs(urlparse(page.url).query)
